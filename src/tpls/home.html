@@ -1,0 +1,11 @@
+<div>
+  <h2>Exemple angularJs &amp; {{name}} by {{editName}}</h2>
+  <nav>
+    <a [routerLink]="['/Home']">Home</a>
+    <a [routerLink]="['/Settings']">Profile</a>
+  </nav>
+  <router-outlet></router-outlet>
+  <ng-form>
+    <input name="firstname" [(ngModel)]="editName" placeholder="Enter you first name">
+  </ng-form>
+</div>

@@ -1,0 +1,28 @@
+## files to ignore
+.editorconfig
+.brackets.json
+notes
+resources_management
+to_dos
+## directories to ignore
+nbproject/
+frame/frameweb/
+loyalcraft-template/
+/nbproject/private/
+### sass dirs
+.sass-cache/
+### The next is installed based on the versions listed in
+### `package.json` when you do `npm install` in this directory
+node_modules/
+### The next is installed based on the versions listed in
+### `bower.json` when you do `bower install` in this directory
+src/libs/
+frame/libs/
+frame_src/libs
+frame/js/frame.js
+frame/css/frame.css
+### the next are compiled from the source files after running this
+### commands `gulp build` in this directory
+dist/
+docs/
+build/
