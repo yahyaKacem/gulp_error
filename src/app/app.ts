@@ -1,30 +1,28 @@
-//our root app component
-import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
-import {HomeComponent} from './home.component';
-import {ProfileComponent} from './setting.component';
-
+import {Component} from "angular2/core";
+import {RouteConfig, ROUTER_DIRECTIVES} from "angular2/router";
+import {HomeComponent} from "./home.component";
+import {ProfileComponent} from "./setting.component";
 @Component({
-  selector: 'my-app',
+  directives: [ROUTER_DIRECTIVES],
   providers: [],
-  templateUrl: 'home.html',
-  directives: [ROUTER_DIRECTIVES]
+  selector: "my-app",
+  templateUrl: "home.html",
 })
 @RouteConfig([
   {
-    path: '/home',
-    name: 'Home',
     component: HomeComponent,
-    useAsDefault: true
+    name: "Home",
+    path: "/home",
+    useAsDefault: true,
   },
   {
-    path: '/setting',
-    name: 'Setting',
-    component: ProfileComponent
-  }
+    component: ProfileComponent,
+    name: "Setting",
+    path: "/setting",
+  },
 ])
 export class App {
   constructor() {
-    this.name = 'TS'
+    this.name = "TS";
   }
 }

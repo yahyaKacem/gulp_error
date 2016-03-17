@@ -6,7 +6,7 @@
    tslint = require('gulp-tslint');
    gulp.task("tslint", function() {
     return gulp.src(["src/**/*.ts"])
-               .pipe(tslint.default())
-               .pipe(tslint.default.reporter("verbose"));
+               .pipe(tslint())
+               .pipe(tslint.reporter("verbose"));
    });
  }(require));
